@@ -1,0 +1,11 @@
+{
+  "name": "2017resolution",
+  "version": "1.0.0",
+  "description": "Charlotte's 2017 Goals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Charlotte",
+  "license": "ISC"
+}
