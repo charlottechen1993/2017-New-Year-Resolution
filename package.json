@@ -4,8 +4,20 @@
   "description": "Charlotte's 2017 Goals",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server.js",
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css"
   },
   "author": "Charlotte",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.9.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.1.1",
+    "nodemon": "^1.11.0",
+    "express": "latest"
+  }
 }
