@@ -4,13 +4,14 @@
   "description": "Charlotte's 2017 Goals",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
     "build-css": "./bin/build-css",
     "watch-css": "./bin/watch-css"
   },
   "author": "Charlotte",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.5.5",
     "express": "^4.14.0",
     "morgan": "^1.7.0",
     "nodemon": "^1.9.2"
