@@ -7,7 +7,7 @@ ng_app.controller("mainCtrl", function($scope) {
         },{
             Title: "Read 2+ Books a Month",
             Subtitle: "",
-            Image: ''
+            Image: ['book1.png','book2.png']
         },{
             Title: "",
             Subtitle: "",
@@ -19,7 +19,7 @@ ng_app.controller("mainCtrl", function($scope) {
         },{
             Title: "2017",
             Subtitle: "Resolution",
-            Image: ''
+            Image: ""
         },{
             Title: "Pass Driving Exam",
             Subtitle: "Before March",
