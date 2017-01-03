@@ -2,31 +2,40 @@ ng_app.controller("mainCtrl", function($scope) {
     $scope.texts = [
         {
             Title: "GRE",
-            Subtitle: ""
+            Subtitle: "",
+            Image: ''
         },{
             Title: "Read 2+ Books a Month",
-            Subtitle: ""
+            Subtitle: "",
+            Image: ''
         },{
             Title: "",
-            Subtitle: ""
+            Subtitle: "",
+            Image: ''
         },{
             Title: "",
-            Subtitle: ""
+            Subtitle: "",
+            Image: ''
         },{
             Title: "2017",
-            Subtitle: "Resolution"
+            Subtitle: "Resolution",
+            Image: ''
         },{
             Title: "Pass Driving Exam",
-            Subtitle: "Before March"
+            Subtitle: "Before March",
+            Image: 'car.png'
         },{
             Title: "",
-            Subtitle: ""
+            Subtitle: "",
+            Image: ''
         },{
             Title: "",
-            Subtitle: ""
+            Subtitle: "",
+            Image: ''
         },{
             Title: "",
-            Subtitle: ""
+            Subtitle: "",
+            Image: ''
         }
     ]
 });

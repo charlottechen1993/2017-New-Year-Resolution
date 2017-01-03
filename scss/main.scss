@@ -25,6 +25,7 @@ table{
         width: 33.3333%;
         height: 33.3333%;
         cursor: pointer;
+        overflow: hidden;
     }
 }
 .res{
@@ -32,6 +33,7 @@ table{
     text-align: center;
     vertical-align: middle;
     font-family: $font-primary;
+    overflow: hidden;
     
     .text-box{
         position: relative;
@@ -48,6 +50,11 @@ table{
         margin:10px;
         vertical-align: middle;
         text-align: center;
+    }
+    
+    img{
+        display: none;
+        position: absolute;
     }
 }
 
@@ -72,6 +79,10 @@ table{
 #res6{ 
     background-color:$center-right; 
     color: #751b14;
+    img{
+        width: 70px;
+        right: -70px;
+    }
 }
 #res7{ background-color:$btm-left; }
 #res8{ background-color:$btm-center; }

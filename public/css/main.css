@@ -8,13 +8,15 @@ table {
   table td {
     width: 33.3333%;
     height: 33.3333%;
-    cursor: pointer; }
+    cursor: pointer;
+    overflow: hidden; }
 
 .res {
   color: white;
   text-align: center;
   vertical-align: middle;
-  font-family: Arial; }
+  font-family: Arial;
+  overflow: hidden; }
   .res .text-box {
     position: relative; }
   .res h1 {
@@ -25,6 +27,9 @@ table {
     margin: 10px;
     vertical-align: middle;
     text-align: center; }
+  .res img {
+    display: none;
+    position: absolute; }
 
 #res1 {
   background-color: #b23665; }
@@ -52,6 +57,9 @@ table {
 #res6 {
   background-color: #fdcc9a;
   color: #751b14; }
+  #res6 img {
+    width: 70px;
+    right: -70px; }
 
 #res7 {
   background-color: #db91bf; }
