@@ -3,15 +3,28 @@ body {
   margin: 0;
   background-color: #ffffff; }
 
-table td {
-  width: 33.3333%;
-  height: 33.3333%;
-  cursor: pointer; }
+table {
+  height: 100vh !important; }
+  table td {
+    width: 33.3333%;
+    height: 33.3333%;
+    cursor: pointer; }
 
 .res {
   color: white;
   text-align: center;
+  vertical-align: middle;
   font-family: Arial; }
+  .res .text-box {
+    position: relative; }
+  .res h1 {
+    font-size: 20px; }
+  .res p {
+    font-size: 15px; }
+  .res h1, .res h2, .res h3, .res h4, .res p {
+    margin: 10px;
+    vertical-align: middle;
+    text-align: center; }
 
 #res1 {
   background-color: #b23665; }
@@ -27,17 +40,18 @@ table td {
 
 #res5 {
   text-align: center;
-  font-family: "Lobster", cursive;
-  background-color: white; }
-  #res5 h1, #res5 h2, #res5 h3, #res5 h4 {
-    margin: 0px; }
+  font-family: "Lobster", cursive !important;
+  background-color: white;
+  color: black !important;
+  cursor: auto !important; }
   #res5 h1 {
-    font-size: 70px; }
-  #res5 h3 {
-    font-size: 25px; }
+    font-size: 50px !important; }
+  #res5 p {
+    font-size: 20px !important; }
 
 #res6 {
-  background-color: #fdcc9a; }
+  background-color: #fdcc9a;
+  color: #751b14; }
 
 #res7 {
   background-color: #db91bf; }

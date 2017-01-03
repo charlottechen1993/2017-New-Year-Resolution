@@ -13,13 +13,14 @@ $btm-right: #e26140;
 
 $font-primary: Arial;
 $font1: 'Lobster', cursive;
-    
+
 body{
     margin: 0;
     background-color: $background;
 }
 
 table{
+    height: 100vh !important;
     td{
         width: 33.3333%;
         height: 33.3333%;
@@ -29,8 +30,27 @@ table{
 .res{
     color: white;
     text-align: center;
+    vertical-align: middle;
     font-family: $font-primary;
+    
+    .text-box{
+        position: relative;
+    }
+    
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    
+    h1,h2,h3,h4,p{
+        margin:10px;
+        vertical-align: middle;
+        text-align: center;
+    }
 }
+
 
 #res1{ 
     background-color:$top-left; 
@@ -41,21 +61,18 @@ table{
 #res4{ background-color:$center-left; }
 #res5{ 
     text-align: center;
-    font-family: $font1;
+    font-family: $font1 !important;
     background-color:white;
+    color: black !important;
+    cursor: auto !important;
     
-    h1,h2,h3,h4{
-        margin:0px;
-    }
-    
-    h1{
-        font-size: 70px;
-    }
-    h3{
-        font-size: 25px;
-    }
+    h1{ font-size: 50px !important; }
+    p{ font-size: 20px !important; }
 }
-#res6{ background-color:$center-right; }
+#res6{ 
+    background-color:$center-right; 
+    color: #751b14;
+}
 #res7{ background-color:$btm-left; }
 #res8{ background-color:$btm-center; }
 #res9{ background-color:$btm-right; }
