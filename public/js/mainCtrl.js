@@ -25,9 +25,9 @@ ng_app.controller("mainCtrl", function($scope) {
             Subtitle: "Before March",
             Image: 'car.png'
         },{
-            Title: "",
+            Title: "Wake up Ontime",
             Subtitle: "",
-            Image: ''
+            Image: 'clock.png'
         },{
             Title: "",
             Subtitle: "",
