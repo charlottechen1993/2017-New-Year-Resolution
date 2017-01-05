@@ -25,8 +25,10 @@ $(document).ready(function(){
         if(res_id!="res5"){
             $(this).children(".text-box").stop().animate({top: '-30px'},400);
             if(res_id=="res2"){
-                $(this).children("#book0").stop().show(0).css({"display":"inline-block","right":"40%"});
-                $(this).children("#book1").stop().show(0).css({"display":"inline-block","left":"40%"});
+                $(this).children("#book1").stop().show(0).css({"display":"inline-block","right":"40%"});
+                $(this).children("#shadow1").stop().show(0).css({"display":"block","right":"40%"});
+                $(this).children("#book2").stop().show(0).css({"display":"inline-block","left":"40%"});
+                $(this).children("#shadow2").stop().show(0).css({"display":"block","left":"40%"});
             } else{
                 $(this).children("img").stop().show(0).css({"display":"block"});
             }

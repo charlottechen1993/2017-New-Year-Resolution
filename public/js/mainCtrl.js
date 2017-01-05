@@ -5,15 +5,15 @@ ng_app.controller("mainCtrl", function($scope) {
             Subtitle: "",
             Image: ''
         },{
-            Title: "Read 2+ Books a Month",
+            Title: "Two Books a Month",
             Subtitle: "",
-            Image: ['book1.png','book2.png']
+            Image: ['book1','book2','shadow1','shadow2']
         },{
-            Title: "",
-            Subtitle: "",
+            Title: "Personal Online Portfolio",
+            Subtitle: "Finish development before March",
             Image: ''
         },{
-            Title: "",
+            Title: "Limit Cellphone Use",
             Subtitle: "",
             Image: ''
         },{
@@ -23,11 +23,11 @@ ng_app.controller("mainCtrl", function($scope) {
         },{
             Title: "Pass Driving Exam",
             Subtitle: "Before March",
-            Image: 'car.png'
+            Image: 'car'
         },{
             Title: "Wake up Ontime",
             Subtitle: "",
-            Image: 'clock.png'
+            Image: ['clock', 'shadow1']
         },{
             Title: "",
             Subtitle: "",
