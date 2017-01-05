@@ -3,14 +3,14 @@ ng_app.controller("mainCtrl", function($scope) {
         {
             Title: "GRE",
             Subtitle: "",
-            Image: ''
+            Image: ['gre']
         },{
             Title: "Two Books a Month",
             Subtitle: "",
             Image: ['book1','book2','shadow1','shadow2']
         },{
             Title: "Personal Online Portfolio",
-            Subtitle: "Finish development before March",
+            Subtitle: "",
             Image: ''
         },{
             Title: "Limit Cellphone Use",
@@ -22,7 +22,7 @@ ng_app.controller("mainCtrl", function($scope) {
             Image: ""
         },{
             Title: "Pass Driving Exam",
-            Subtitle: "Before March",
+            Subtitle: "",
             Image: 'car'
         },{
             Title: "Wake up Ontime",

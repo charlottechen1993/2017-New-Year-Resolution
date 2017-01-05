@@ -15,6 +15,14 @@ $btm-right: #e26140;
 $font-primary: 'Kaushan Script', cursive;;
 $font1: 'Lobster', cursive;
 
+@mixin shadow-scale($scale){
+    -webkit-transform: scale($scale);
+    -moz-transform: scale($scale);
+    -o-transform: scale($scale);
+    -ms-transform: scale($scale);
+    transform: scale($scale);
+}
+
 body{
     margin: 0;
     background-color: $background;
@@ -39,6 +47,7 @@ table{
     
     .text-box{
         position: relative;
+        top: -30px;
     }
     
     h1{
@@ -56,51 +65,92 @@ table{
     }
     
     img{
-        display: none;
+        display: block;
         position: absolute;
+        
+        
     }
 }
 
 
 #res1{ 
     background-color:$top-left; 
+    img{
+        left:0;
+        margin: auto;
+        right:0;
+        height: 60px;
+        bottom: 20%;
+    }
+    
+    &:hover img{
+        -webkit-animation: pulse2 1s linear infinite;
+        -moz-animation: pulse2 1s linear infinite;
+        -ms-animation: pulse2 1s linear infinite;
+        animation: pulse2 1s linear infinite;
+    }
+    
+    @-webkit-keyframes "pulse2" {
+        0% { @include shadow-scale(1); }
+        25%, 75% { @include shadow-scale(0.9); }
+        50%{ @include shadow-scale(0.8); }
+        100% { @include shadow-scale(1); }
+    }
 }
 
 #res2{ 
     background-color:$top-center; 
-    img#book1, img#book2{
+    #book1, #book2{
         width: 30px;
         margin: auto;
         position: absolute;
         bottom: 25%;
         vertical-align: bottom;
         z-index: 2;
+        display: inline-block !important;
     }
+    #book1, #shadow1{ right: 40%; }
+    #book2, #shadow2 { left: 40%; }
     
     img#shadow1, img#shadow2{
         width: 30px;
         margin: auto;
         position: absolute;
-        bottom: 12%;
+        bottom: 20%;
         vertical-align: bottom;
         z-index: 1;
     }
     
-    #book1{
+    &:hover #shadow1,
+    &:hover #shadow2{
+        -webkit-animation: pulse1 1s linear infinite;
+        -moz-animation: pulse1 1s linear infinite;
+        -ms-animation: pulse1 1s linear infinite;
+        animation: pulse1 1s linear infinite;
+    }
+    
+    &:hover #book1, 
+    &:hover #book2{
         -webkit-animation:bounce 1s infinite;
     }
     
-    #book2{
-        -webkit-animation:bounce 1s infinite;
+    &:hover #book2{
         -webkit-animation-delay: 0.1s; 
         animation-delay: 0.1s;
     }
     
     @-webkit-keyframes bounce {
-        0%       { bottom:35px; }
-        25%, 75% { bottom:50px; }
-        50%      { bottom:55px; }
-        100%     {bottom:35px;}
+        0%       { bottom:25%; }
+        25%, 75% { bottom:30%; }
+        50%      { bottom:35%; }
+        100%     {bottom:25%;}
+    }
+    
+    @-webkit-keyframes "pulse1" {
+        0% { @include shadow-scale(0.8); }
+        25%, 75% { @include shadow-scale(0.75); }
+        50%{ @include shadow-scale(0.5); }
+        100% { @include shadow-scale(0.8); }
     }
 }
 #res3{ background-color:$top-right; }
@@ -112,6 +162,9 @@ table{
     color: black !important;
     cursor: auto !important;
     
+    .text-box{ 
+        top: 0px !important; 
+    }
     h1{ font-size: 70px !important; }
     p{ font-size: 30px !important; }
 }
@@ -120,7 +173,10 @@ table{
     color: #751b14;
     img{
         width: 70px;
-        right: -70px;
+        
+        left:0;
+        margin: auto;
+        right:0;
     }
 }
 #res7{ 
@@ -133,24 +189,45 @@ table{
     }
     
     #clock{
-        -webkit-animation:bounce-clock 1s infinite;
-        bottom: 25%;
+        bottom: 15%;
         z-index: 2;
     }
     
+    &:hover #clock{
+        -webkit-animation:bounce-clock 1s infinite;
+    }
+    
     #shadow1{
-        bottom: 8.5%;    
+        bottom: 13.5%;    
         z-index: 1;
     }
     
+    &:hover #shadow1{
+        -webkit-animation: pulse 1s linear infinite;
+        -moz-animation: pulse 1s linear infinite;
+        -ms-animation: pulse 1s linear infinite;
+        animation: pulse 1s linear infinite;
+    }
+    
     @-webkit-keyframes bounce-clock {
-        0%       { bottom:25px; }
-        10%      { bottom: 35px; }
-        20%      { bottom:25px; }
-        30%      { bottom: 35px; }
-        50%      { bottom:25px; }
-        75%      { bottom: 55px; }
-        100%     {bottom:25px;}
+        0%       { bottom:15%; }
+        10%      { bottom: 20%; }
+        20%      { bottom:15%; }
+        30%      { bottom: 20%; }
+        50%      { bottom:15%; }
+        75%      { bottom: 30%; }
+        100%     {bottom:15%;}
+    }
+    
+    
+    @-webkit-keyframes "pulse" {
+        0% { @include shadow-scale(0.9); }
+        10%{ @include shadow-scale(0.8); }
+        20%{ @include shadow-scale(0.9); }
+        30%{ @include shadow-scale(0.8); }
+        50%{ @include shadow-scale(0.9); }
+        75%{ @include shadow-scale(0.4); }
+        100% { @include shadow-scale(0.9); }
     }
 }
 #res8{ background-color:$btm-center; }
