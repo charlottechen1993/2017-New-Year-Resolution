@@ -11,7 +11,7 @@ ng_app.controller("mainCtrl", function($scope) {
         },{
             Title: "Personal Online Portfolio",
             Subtitle: "",
-            Image: ''
+            Image: ['portfolio1', 'portfolio2']
         },{
             Title: "Limit Cellphone Use",
             Subtitle: "",

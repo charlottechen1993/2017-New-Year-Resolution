@@ -147,6 +147,23 @@ table {
 
 #res3 {
   background-color: #892262; }
+  #res3 img {
+    left: 0;
+    margin: auto;
+    right: 0;
+    bottom: 25%;
+    transition: all .6s ease-in-out; }
+  #res3 #portfolio1 {
+    z-index: 2;
+    width: 60px; }
+  #res3 #portfolio2 {
+    width: 10px;
+    z-index: 1;
+    bottom: 35%; }
+  #res3:hover #portfolio1 {
+    transform: scale(0); }
+  #res3:hover #portfolio2 {
+    transform: scale(6); }
 
 #res4 {
   background-color: #d15ba2; }
@@ -155,7 +172,7 @@ table {
   text-align: center;
   font-family: "Lobster", cursive !important;
   background-color: white;
-  color: black !important;
+  color: #751b14 !important;
   cursor: auto !important; }
   #res5 .text-box {
     top: 0px !important; }
@@ -165,8 +182,7 @@ table {
     font-size: 30px !important; }
 
 #res6 {
-  background-color: #fdcc9a;
-  color: #751b14; }
+  background-color: #fdcc9a; }
   #res6 img {
     width: 70px;
     left: 0;

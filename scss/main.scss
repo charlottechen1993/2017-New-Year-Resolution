@@ -67,8 +67,6 @@ table{
     img{
         display: block;
         position: absolute;
-        
-        
     }
 }
 
@@ -153,13 +151,44 @@ table{
         100% { @include shadow-scale(0.8); }
     }
 }
-#res3{ background-color:$top-right; }
+#res3{ 
+    background-color:$top-right; 
+    
+    img{
+        left:0;
+        margin: auto;
+        right:0;
+        bottom: 25%;
+        transition: all .6s ease-in-out;
+    }
+    
+    #portfolio1{ 
+        z-index: 2;
+        width: 60px;
+    }
+    
+    #portfolio2{ 
+        width:10px;
+        z-index: 1; 
+        bottom: 35%;
+    }
+    
+    &:hover #portfolio1{
+        transform: scale(0);
+    }
+    
+    &:hover #portfolio2{
+        transform: scale(6);
+    }
+}
+
 #res4{ background-color:$center-left; }
+
 #res5{ 
     text-align: center;
     font-family: $font1 !important;
     background-color:white;
-    color: black !important;
+    color: #751b14 !important;
     cursor: auto !important;
     
     .text-box{ 
@@ -170,10 +199,8 @@ table{
 }
 #res6{ 
     background-color:$center-right; 
-    color: #751b14;
     img{
         width: 70px;
-        
         left:0;
         margin: auto;
         right:0;
