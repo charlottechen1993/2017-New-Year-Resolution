@@ -9,13 +9,13 @@ ng_app.controller("mainCtrl", function($scope) {
             Subtitle: "",
             Image: ['book1','book2','shadow1','shadow2']
         },{
+            Title: "",
+            Subtitle: "",
+            Image: ""
+        },{
             Title: "Personal Online Portfolio",
             Subtitle: "",
             Image: ['portfolio1', 'portfolio2']
-        },{
-            Title: "Limit Cellphone Use",
-            Subtitle: "",
-            Image: ''
         },{
             Title: "2017",
             Subtitle: "Resolution",
@@ -23,7 +23,7 @@ ng_app.controller("mainCtrl", function($scope) {
         },{
             Title: "Pass Driving Exam",
             Subtitle: "",
-            Image: 'car'
+            Image: ['car']
         },{
             Title: "Wake up Ontime",
             Subtitle: "",
@@ -33,9 +33,9 @@ ng_app.controller("mainCtrl", function($scope) {
             Subtitle: "",
             Image: ''
         },{
-            Title: "",
+            Title: "Fitness Goal: 120lb",
             Subtitle: "",
-            Image: ''
+            Image: ["scale"]
         }
     ]
 });

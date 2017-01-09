@@ -44,6 +44,7 @@ table{
     font-family: $font1;
     overflow: hidden;
     position: relative;
+    padding: 10px;
     
     .text-box{
         position: relative;
@@ -51,15 +52,15 @@ table{
     }
     
     h1{
-        font-size: 25px;
+        font-size: 1.5em;
         font-weight: normal !important;
     }
     p{
-        font-size: 15px;
+        font-size: 1em;
     }
     
     h1,h2,h3,h4,p{
-        margin:10px;
+        margin:0px;
         vertical-align: middle;
         text-align: center;
     }
@@ -154,6 +155,11 @@ table{
 #res3{ 
     background-color:$top-right; 
     
+}
+
+#res4{ 
+    background-color:$center-left; 
+    
     img{
         left:0;
         margin: auto;
@@ -180,9 +186,8 @@ table{
     &:hover #portfolio2{
         transform: scale(6);
     }
-}
 
-#res4{ background-color:$center-left; }
+}
 
 #res5{ 
     text-align: center;
@@ -194,8 +199,8 @@ table{
     .text-box{ 
         top: 0px !important; 
     }
-    h1{ font-size: 70px !important; }
-    p{ font-size: 30px !important; }
+    h1{ font-size: 4em !important; }
+    p{ font-size: 1.8em !important; }
 }
 #res6{ 
     background-color:$center-right; 
@@ -258,4 +263,13 @@ table{
     }
 }
 #res8{ background-color:$btm-center; }
-#res9{ background-color:$btm-right; }
+#res9{ 
+    background-color:$btm-right; 
+    
+    img{
+        left:0;
+        margin: auto;
+        right:0;
+        width: 50px;
+    }
+}

@@ -18,17 +18,18 @@ table {
   vertical-align: middle;
   font-family: "Lobster", cursive;
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  padding: 10px; }
   .res .text-box {
     position: relative;
     top: -30px; }
   .res h1 {
-    font-size: 25px;
+    font-size: 1.5em;
     font-weight: normal !important; }
   .res p {
-    font-size: 15px; }
+    font-size: 1em; }
   .res h1, .res h2, .res h3, .res h4, .res p {
-    margin: 10px;
+    margin: 0px;
     vertical-align: middle;
     text-align: center; }
   .res img {
@@ -147,26 +148,26 @@ table {
 
 #res3 {
   background-color: #892262; }
-  #res3 img {
+
+#res4 {
+  background-color: #d15ba2; }
+  #res4 img {
     left: 0;
     margin: auto;
     right: 0;
     bottom: 25%;
     transition: all .6s ease-in-out; }
-  #res3 #portfolio1 {
+  #res4 #portfolio1 {
     z-index: 2;
     width: 60px; }
-  #res3 #portfolio2 {
+  #res4 #portfolio2 {
     width: 10px;
     z-index: 1;
     bottom: 35%; }
-  #res3:hover #portfolio1 {
+  #res4:hover #portfolio1 {
     transform: scale(0); }
-  #res3:hover #portfolio2 {
+  #res4:hover #portfolio2 {
     transform: scale(6); }
-
-#res4 {
-  background-color: #d15ba2; }
 
 #res5 {
   text-align: center;
@@ -177,9 +178,9 @@ table {
   #res5 .text-box {
     top: 0px !important; }
   #res5 h1 {
-    font-size: 70px !important; }
+    font-size: 4em !important; }
   #res5 p {
-    font-size: 30px !important; }
+    font-size: 1.8em !important; }
 
 #res6 {
   background-color: #fdcc9a; }
@@ -275,3 +276,8 @@ table {
 
 #res9 {
   background-color: #e26140; }
+  #res9 img {
+    left: 0;
+    margin: auto;
+    right: 0;
+    width: 50px; }
